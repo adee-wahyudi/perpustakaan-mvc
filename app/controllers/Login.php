@@ -13,7 +13,7 @@ class Login extends Controller {
 				$_SESSION['nama_admin'] = $row['nama_admin'];
 				$_SESSION['session_login'] = 'sudah_login'; 
 				
-				header('location: ' .base_url .'/anggota');
+				header('location: ' .base_url .'/home');
 		} else {
 			Flasher::setMessage('Username / Password','salah.','danger');
 			header('location: ' .base_url .'/login');
